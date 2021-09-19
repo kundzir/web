@@ -32,14 +32,40 @@ body {
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.86);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.86);
 }
-.table {
-   padding: 5px;
-   border: 5px;
-   border-radius: 10px;
+
+.table-curved {
 }
-.table > thead {
-   border-radius: 10px;
+.table-curved th {
+   padding: 3px 10px;
 }
+.table-curved td {
+   position: relative;
+/*   background-color: #e5e5e5;*/
+   padding: 6px 10px;
+   border-bottom: 2px solid white;
+   border-top: 2px solid white;
+}
+.table-curved td:first-child:before {
+   content: "";
+   position: absolute;
+   border-radius: 8px 0 0 8px;
+   background-color: #a6caf0;
+   height: 100%;
+   top: 0px;
+}
+.table-curved td:last-child {
+   border-radius: 0 5px 5px 0;
+}
+.table-curved tr:hover td {
+   background-color: #c5c5c5;
+}
+.table-curved tr.blue td:first-child:before {
+   background-color: cornflowerblue;
+}
+.table-curved tr.green td:first-child:before {
+   background-color: forestgreen;
+}
+/*
 .table-primary {
    margin-top: 10px;
    border-radius: 15px;
@@ -54,33 +80,15 @@ body {
 .btn-primary {
 }
 .table-success {
+   margin-top: 10px;
+   border-radius: 15px;
 }
 .table-warning {
-}
-/*
-.img{
-    height:5%;
-    position: relative;
-    padding:5px;
-    max-height:5vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+   margin-top: 10px;
+   border-radius: 15px;
 }
 */
-/*
-.!rounded float-start{
-   height:5%;
-    position: relative;
-    padding:5px;
-    max-height:5vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center; 
-}
-*/
+
 .logo {
    height: 5%;
    position: relative;
@@ -93,6 +101,7 @@ body {
    -o-object-position: center;
    object-position: center;
 }
+
 .columns {
    display: -ms-grid;
    display: grid;
@@ -134,15 +143,7 @@ body {
    font: 3vh Verdana, Helvetica, sans-serif;
    font-weight: bold;
    background: #667db6;
-   background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#667db6),
-      color-stop(#0082c8),
-      color-stop(#0082c8),
-      to(#667db6)
-   );
+   background: -webkit-gradient(linear, left top, right top, from(#667db6), color-stop(#0082c8), color-stop(#0082c8), to(#667db6));
    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.86);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.86);
@@ -151,15 +152,7 @@ body {
 }
 .sidebar-rows > button:hover {
    background: #0575e6;
-   background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#021b79),
-      color-stop(#0575e6),
-      color-stop(#0575e6),
-      to(#021b79)
-   );
+   background: -webkit-gradient(linear, left top, right top, from(#021b79), color-stop(#0575e6), color-stop(#0575e6), to(#021b79));
    background: linear-gradient(to right, #021b79, #0575e6, #0575e6, #021b79);
    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 102, 0.788);
    box-shadow: 0 15px 20px rgba(0, 0, 102, 0.788);
@@ -169,15 +162,7 @@ body {
 }
 .sidebar-rows > button:active {
    background: #0575e6;
-   background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#0575e6),
-      color-stop(#021b79),
-      color-stop(#021b79),
-      to(#0575e6)
-   );
+   background: -webkit-gradient(linear, left top, right top, from(#0575e6), color-stop(#021b79), color-stop(#021b79), to(#0575e6));
    background: linear-gradient(to right, #0575e6, #021b79, #021b79, #0575e6);
    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 102, 0.788);
    box-shadow: 0 15px 20px rgba(0, 0, 102, 0.788);
