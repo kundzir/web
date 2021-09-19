@@ -1,0 +1,10 @@
+.div>button {
+    background: blue;
+    font-size: 30px;
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    
+}
